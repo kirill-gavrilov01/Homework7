@@ -10,15 +10,16 @@ public class Main {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
         System.out.println(" Задача№2");
-        clientOS = 0;
+        int OS;
+        OS = 0;
 
         int clientDeviceYear = 2015;
 
-        if (clientOS == 0 && clientDeviceYear <2015) {
+        if (OS == 0 && clientDeviceYear <2015) {
             System.out.println(" Установите облегченную версию приложения для iOS по ссылке");
-        } else if (clientOS == 0 && clientDeviceYear >=2015) {
+        } else if (OS == 0 && clientDeviceYear >=2015) {
             System.out.println(" Установите приложение для iOS по ссылке");
-        } else if (clientOS == 1 && clientDeviceYear < 2015) {
+        } else if (OS == 1 && clientDeviceYear < 2015) {
             System.out.println(" Установите облегченную версию приложения для Android по ссылке ");
         } else {
             System.out.println(" Установите приложение для Android по ссылке");
@@ -27,26 +28,22 @@ public class Main {
     int year = 2021;
 
         if (year < 1584 && ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))) {
-        System.out.println(year + " год является високосным");
-    } else if (year > 1584) {
+            System.out.println(year + " год является високосным");
+        } else {
         System.out.println(year + " год не является високосным");
-    } else {
-        System.out.println("Год не может быть меньше 1585");
     }
         System.out.println(" Задача№4");
     int deliveryDistance = 95;
-    int days;
 
         if (deliveryDistance <= 20) {
-        days = 1;
+            System.out.println("Потребуется дней " + 1 );
     } else if (deliveryDistance > 20 && deliveryDistance <=60) {
-        days = 2;
+            System.out.println("Потребуется дней " + 2 );
     } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
-        days = 3;
+            System.out.println("Потребуется дней " + 3 );
     } else {
-            days = -1;
+            System.out.println(" Доставки нет ");
         }
-        System.out.println("срок доставки " + days + " дня ");
 
         System.out.println(" Задача№5");
     int monthNumber = 12;
