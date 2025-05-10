@@ -11,7 +11,6 @@ public class Main {
         }
         System.out.println(" Задача№2");
         int clientOS2 = 1;
-
         int clientDeviceYear = 2015;
 
         if (clientOS2 == 0 && clientDeviceYear <2015) {
